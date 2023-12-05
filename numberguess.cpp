@@ -27,8 +27,9 @@ int main()
 
 		
 		srand(time(0));
-		int secretNumber = 1 + (rand() % 100);
+		int secretNumber = (rand() % 100 + 1);
 		int playerChoice;
+		//srand function with %100 makes a random choice between 0-99, that is why we add 1 after the %100 statement
 
 		
 		if (difficultyChoice == 1) {
